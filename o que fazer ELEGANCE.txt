@@ -1,0 +1,14 @@
+Index:
+	- Botao pra acessar o sistema?
+	- Mensagem no carrossel caso nao haja nenhum produto cadastrado
+
+Cadastro Produtos:
+	- Excluir imagem quando excluir produto
+	- Arrumar parte do login e botoes de usuario e sair
+
+Vitrine:
+ 	- Adicionar diversos filtros
+	- Mensagem caso nao tenha nenhum produto
+
+Banner:
+	-Tudo (insert, edit, delete)

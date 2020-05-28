@@ -1,0 +1,806 @@
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.fonte-site {
+  font-family:'Courier New', Courier, monospace;
+  font-size: 18px;
+}
+
+.margin-box {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bg-image {
+  background-image: url("/images/fundos/fundosite.png");
+  padding-top:70px;
+  padding-bottom:70px;
+  background-position: 100% 0;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  min-height:100%;
+}
+
+
+/* ----- Footer ----- */
+.icons-footer {
+  width:30px;
+  height:30px;
+  margin-right: 15px;
+}
+
+.font-footer {
+  color: white;
+}
+
+.cat-footer {
+  margin-top:10px;
+}
+
+/* ----- Nav Novidades ----- */
+
+.navbar-config {
+  background-color: #212121;
+}
+
+.navbar-text-config {
+  color: white;
+}
+
+/* ----- Carrossel Novidades ----- */
+.fonte-carrossel {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+}
+
+.box-valor{
+  border-top: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+  padding: 8px 0px 8px 0px;
+}
+
+.MultiCarousel { 
+  float: left; 
+  overflow: hidden; 
+  padding: 15px; 
+  width: 100%; 
+  position:relative; 
+}
+
+.MultiCarousel .MultiCarousel-inner { 
+  transition: 1s ease all; 
+  float: left; 
+}
+
+.MultiCarousel .MultiCarousel-inner .item { 
+  float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item > div { 
+  text-align: center; 
+  padding:10px; 
+  margin:-5px; 
+}
+    
+.MultiCarousel .leftLst, .MultiCarousel .rightLst { 
+  position:absolute; 
+  border-radius:50%;
+  top:calc(50% - 20px); 
+}
+    
+.MultiCarousel .leftLst {
+   left:0; 
+}
+    
+.MultiCarousel .rightLst { 
+  right:0; 
+}
+    
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over {
+  pointer-events: none; 
+  background:#ccc; 
+}
+
+.imagem-carrossel {
+  width:100px!important;
+}
+
+
+
+/* ----- Top Menu ----- */
+/* --- Base --- */
+body {
+    background: #fff;
+    color: #454545;
+  }
+  
+  a {
+    color: white;
+  }
+  a:hover {
+    color: white;
+  }
+  
+  .button-menu {
+    -webkit-font-smoothing: antialiased;
+    background-color: #212121;
+    border:1px solid;
+    border-color: #212121;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 0.75em 1em;
+    width: 13%;
+    height: 42px;
+  }
+
+  .button-menu:before {
+    content: "";
+    display: block;
+    margin: 7px auto;
+    width: 70%;
+    height: 0.25em;
+    background: white;
+    box-shadow: 0 .45em 0 0 white, 0 .9em 0 0 white;
+  }
+
+  .button-menu:hover::before {
+    background: #868585;
+    box-shadow: 0 .45em 0 0 #868585, 0 .9em 0 0 #868585;
+  }
+  
+  /* --- Header --- */
+  .l-header {
+    height: 80px;
+    position: relative;
+    background: #212121;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    /*opacity: 0.5;
+    font-family: Brus*/
+  }
+  
+  .logo-image {
+    height: 70px;
+    width: 180px;
+    padding-top:10px;
+  }
+
+  .logo {
+    float: left;
+    margin-left:-10%;
+  }
+  .logo__title {
+    margin: 0;
+  }
+  .logo__link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 10px;
+    line-height: 80px;
+    height: 80px;
+    color: #fff;
+    word-wrap: no-wrap;
+  }
+  
+  .menu-btn {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .logo {
+      float: none;
+    }
+  
+    .menu-btn {
+      display: block;
+    }
+  }
+  /* --- Menu --- */
+  .menu {
+    float: right;
+  }
+  .menu__list {
+    overflow: hidden;
+    padding-left: 0;
+    margin: -2%;
+    list-style: none;
+  }
+  .menu__item {
+    float: left;
+    text-align: center;
+    text-align: center;
+  }
+  .menu__link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    line-height: 5em;
+    height: 5em;
+    padding: 0 1.5em;
+    word-wrap: no-wrap;
+    transition: all 0.3s ease;
+  }
+  .menu__link:hover, .menu__link:focus {
+    background: #868585;
+    color: #fff;
+    text-decoration:none;
+  }
+  
+  @media (max-width: 768px) {
+    .menu {
+      float: none;
+    }
+    .menu__item {
+      display: block;
+      float: none;
+      -webkit-transform: translateX(-100%);
+      -moz-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      -o-transform: translateX(-100%);
+      transform: translateX(-100%);
+      transition: all 0.3s ease-out;
+    }
+    .menu__item--play {
+      display: block;
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+      transform: translateX(0);
+    }
+    .menu__item + .menu__item {
+      border-top: 1px solid #868585;
+    }
+    .menu__link {
+      background: #212121;
+    }
+    .menu__link:hover {
+      background: #868585;
+    }
+  }
+  /* --- Wrap --- */
+  .wrap {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+  }
+  .l-main .wrap {
+    padding: 0 10px;
+  }
+
+
+/* ----- VITRINE ----- */
+.left-sidebar h2, .brands_products h2 {
+  color: #212121;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  margin: 0 auto 15px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 3;
+  padding-top: 50px;
+}
+
+.left-sidebar h2:before {
+  content: " ";
+  position: absolute;
+  background: #fff;
+  bottom: -6px;
+  width: 170px;
+  height: 30px;
+  z-index: -1;
+  left: 43%;
+  margin-left: -65px;
+}
+
+.left-sidebar h2:after, h2.title:after {
+  content: " ";
+  position: absolute;
+  border: 1px solid #bdbdbd;
+  bottom: 15px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  z-index: -2;
+}
+
+.label-tamanhos {
+  width: auto;
+  display: block;
+  float: left;
+  cursor: pointer;
+  border-radius: 2px;
+  border: 1px solid #999;
+  background-color: #fff;
+  box-shadow: inset 0 0 0 2px white;
+  font-size: 14px;
+  line-height: 34px;
+  min-width: 36px;
+  padding: 0 8px;
+  text-align: center;
+  margin: 0 14px 14px 0;
+}
+
+.label-tamanhos:hover {
+  background-color: #212121;
+  color: #ffffff;
+}
+
+.check-tamanhos {
+  position: absolute;
+  left: -99999px;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #212121;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 8px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #868585;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-top:2px;
+}
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 15px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+  margin-top:5px;
+}
+
+.collapsible.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* ----- checkbox normal -----*/
+/* Customize the label (the container) */
+.container-chekbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container-chekbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container-chekbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-chekbox input:checked ~ .checkmark {
+  background-color: #212121;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container-chekbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-chekbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+/* ---------- PARTE CENTRAL VITRINE ---------- */
+.prateleira {
+  margin-top:12px;
+}
+
+.prateleira ul {
+  float: left;
+  position: relative;
+  padding-left: 7px;
+  padding-right: 7px;
+  min-height: 1px;
+  width: 33.3333333333%;
+  margin-bottom: 14px;
+  padding: 7px;
+  border: solid 1px transparent;
+}
+
+.prateleira ul li {
+  display: block;
+  color: #333;
+  outline: none;
+  min-height: 1px;
+}
+
+.prateleira .imagem-produto {
+  position: relative;
+}
+
+.prateleira .imagem-produto figure {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 120%;
+  background: #dfdedc;
+  background-size: 15%;
+  border: solid 1px #d9d9d9;
+  box-sizing: initial;
+}
+
+.prateleira .imagem-produto figure::before {
+  font-family: "cea-icons";
+  font-size: 42em;
+  content: "\f13e";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  text-align: center;
+  color: #999;
+  text-shadow: 0 3px 20px rgba(150,150,150,0.6);
+}
+
+.prateleira .imagem-produto .imagem-produto-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.prateleira ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.prateleira .imagem-produto figure img {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+.prateleira .detalhes-produto {
+  margin: 0 0px 10px;
+  background-color: #f5f5f5;
+}
+
+.prateleira .detalhes-produto-nome {
+  display: block;
+  height: 40px;
+  font-size: 18px;
+  overflow: hidden;
+  margin-top: 5px;
+  padding: 0 20px;
+}
+
+.prateleira .detalhes-produto .preco-detalhes-produto {
+  border-top: 1px solid #d9d9d9;
+  margin-top: 8px !important;
+  padding-top: 8px;
+}
+
+.prateleira .detalhes-produto .preco-detalhes-produto {
+  margin: 0 5px 10px;
+  padding: 0 15px;
+}
+
+/* -------------------------------------------------------------- */
+/* ---------------------------SISTEMA---------------------------- */
+/* -------------------------------------------------------------- */
+
+.nav-link:hover, .nav-link:focus {
+  background: #868585;
+  width: 100%;
+  height: 100%;
+  padding-top: 30%;
+  padding-bottom: 30%;
+}
+
+.btn-padrao {
+  background-color: #212121;
+  color: #fff;
+  border-color: #000;
+}
+
+.btn-padrao:hover{
+  background-color: gray;
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn-novo {
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  font-family:'Courier New', Courier, monospace;
+	font-size: 16px;
+	color: #ffffff;
+	padding: 14px 21px;
+	background-color: #212121;
+	border-radius: 6px;
+	border: 0px solid #000000;
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.2),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(255,255,255,0.2),
+		0px 1px 0px rgba(255,255,255,0.4);
+}
+
+.btn-novo:hover {
+  background-color: gray;
+  border-color:#fff;
+}
+
+.botao-sistema {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #212121;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.botao-sistema:hover {
+  background-color:#4c4c4c;
+}
+
+.botao-sistema span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.botao-sistema span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.botao-sistema:hover span {
+  padding-right: 25px;
+}
+
+.botao-sistema:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+textarea {
+  resize:none;
+}
+
+
+/* --- CHECKBOX E RADIO PERSONALIZADO --- */
+.funkyradio div {
+  clear: both;
+  overflow: hidden;
+}
+
+.funkyradio label {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #D1D3D4;
+  font-weight: normal;
+}
+
+.funkyradio input[type="radio"]:empty,
+.funkyradio input[type="checkbox"]:empty {
+  display: none;
+}
+
+.funkyradio input[type="radio"]:empty ~ label,
+.funkyradio input[type="checkbox"]:empty ~ label {
+  position: relative;
+  line-height: 2.5em;
+  text-indent: 3.25em;
+  margin-top: 2em;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.funkyradio input[type="radio"]:empty ~ label:before,
+.funkyradio input[type="checkbox"]:empty ~ label:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 2.5em;
+  background: #D1D3D4;
+  border-radius: 3px 0 0 3px;
+}
+
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label,
+.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label {
+  color: #888;
+}
+
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label:before,
+.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: #C2C2C2;
+}
+
+.funkyradio input[type="radio"]:checked ~ label,
+.funkyradio input[type="checkbox"]:checked ~ label {
+  color: #777;
+}
+
+.funkyradio input[type="radio"]:checked ~ label:before,
+.funkyradio input[type="checkbox"]:checked ~ label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: #333;
+  background-color: #ccc;
+}
+
+.funkyradio input[type="radio"]:focus ~ label:before,
+.funkyradio input[type="checkbox"]:focus ~ label:before {
+  box-shadow: 0 0 0 3px #999;
+}
+
+.funkyradio-default input[type="radio"]:checked ~ label:before,
+.funkyradio-default input[type="checkbox"]:checked ~ label:before {
+  color: #333;
+  background-color: #ccc;
+}
+
+
+/* ---------- INPUT FILE ---------- */
+.input-file-container {
+  position: relative;
+  width: 225px;
+} 
+.js .input-file-trigger {
+  display: block;
+  padding: 14px 45px;
+  background: #212121;
+  color: #fff;
+  font-size: 1em;
+  transition: all .4s;
+  cursor: pointer;
+}
+.js .input-file {
+  position: absolute;
+  top: 0; left: 0;
+  width: 225px;
+  opacity: 0;
+  padding: 14px 0;
+  cursor: pointer;
+}
+.js .input-file:hover + .input-file-trigger,
+.js .input-file:focus + .input-file-trigger,
+.js .input-file-trigger:hover,
+.js .input-file-trigger:focus {
+  background: gray;
+  color: #fff;
+}
+
+.file-return {
+  margin: 0;
+}
+.file-return:not(:empty) {
+  margin: 1em 0;
+}
+.js .file-return {
+  font-style: italic;
+  font-size: .9em;
+  font-weight: bold;
+}
+.js .file-return:not(:empty):before {
+  content: "Arquivo Selecionado: ";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.center{
+  margin: auto;   
+}
+
+/* ----- Table ----- */
+.table-config {
+  background-color:#212121;
+  color: #fff;
+}
+
+.glyphicon-pencil, .glyphicon-remove {
+  cursor: pointer;
+}
+
+#dialog { display: none; }
