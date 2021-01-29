@@ -27,13 +27,19 @@ Site / Sistema em desenvolvimento para uma loja de roupas, calçados e acessóri
 <br>
 <img src="/public/images/screenshots/01.png" width="600">
 <br>
+<br
+<br>
 <b>Vitrine</b>
 <br>
 <img src="/public/images/screenshots/02.png" width="600">
 <br>
+<br>
+<br>
 <b>Lista de produtos cadastrados</b>
 <br>
 <img src="/public/images/screenshots/03.png" width="600">
+<br>
+<br>
 <br>
 <b>Editar produto já cadastrado</b>
 <br>
