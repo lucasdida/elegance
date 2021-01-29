@@ -27,7 +27,7 @@ Site / Sistema em desenvolvimento para uma loja de roupas, calçados e acessóri
 <br>
 <img src="/public/images/screenshots/01.png" width="600">
 <br>
-<br
+<br>
 <br>
 <b>Vitrine</b>
 <br>
