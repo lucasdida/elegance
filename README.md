@@ -22,6 +22,19 @@ Site / Sistema em desenvolvimento para uma loja de roupas, calçados e acessóri
 - Cadastro de produtos(Sistema): Cadastra os produtos desejados com diversas especificações (nome, preço, tipo, gênero, tamanho e imagem);
 - Cadastro de banner(Sistema): Ainda não desenvolvido, terá como função alterar o banner da pagina principal do site.
 
+### Preview
+<b>Home</b>
+<img src="/public/images/screenshots/01.png" width="600">
+<br>
+<b>Vitrine</b>
+<img src="/public/images/screenshots/02.png" width="600">
+<br>
+<b>Lista de produtos cadastrados</b>
+<img src="/public/images/screenshots/03.png" width="600">
+<br>
+<b>Editar produto já cadastrado</b>
+<img src="/public/images/screenshots/04.png" width="600">
+
 ### Pré-Requisitos
 - Linhagem de programação PHP + banco de dados MySQL;
 - Composer (https://getcomposer.org/download/);
